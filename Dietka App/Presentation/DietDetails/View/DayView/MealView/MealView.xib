@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MealView" customModule="Dietka_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="254"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breakfast" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZl-nO-IHV">
+                    <rect key="frame" x="167.5" y="20" width="79" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="WFy-uj-2gh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One bowl of grapes" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnr-ma-WV0">
+                    <rect key="frame" x="25" y="104" width="215" height="32"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lPY-aC-W5I">
+                    <rect key="frame" x="265" y="58" width="124" height="124"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DishExample" translatesAutoresizingMaskIntoConstraints="NO" id="NOn-UM-MPm">
+                            <rect key="frame" x="0.0" y="0.0" width="124" height="124"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="NOn-UM-MPm" firstAttribute="top" secondItem="lPY-aC-W5I" secondAttribute="top" id="ekr-sX-AX8"/>
+                        <constraint firstAttribute="bottom" secondItem="NOn-UM-MPm" secondAttribute="bottom" id="kcz-NB-RhJ"/>
+                        <constraint firstAttribute="trailing" secondItem="NOn-UM-MPm" secondAttribute="trailing" id="sUx-Bt-BF5"/>
+                        <constraint firstItem="NOn-UM-MPm" firstAttribute="leading" secondItem="lPY-aC-W5I" secondAttribute="leading" id="t96-if-5B6"/>
+                        <constraint firstAttribute="width" secondItem="lPY-aC-W5I" secondAttribute="height" multiplier="1:1" id="uEi-V4-UKE"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="157kCal" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gz0-C9-Wpk">
+                    <rect key="frame" x="265" y="192" width="124" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="zIu-Pb-QAS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WaP-SS-lJ7">
+                    <rect key="frame" x="25" y="242" width="364" height="2"/>
+                    <color key="backgroundColor" systemColor="separatorColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="DsQ-TH-BVB"/>
+                    </constraints>
+                </view>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hts-CB-BLq">
+                    <rect key="frame" x="108" y="196.5" width="51" height="31"/>
+                    <color key="onTintColor" systemColor="linkColor"/>
+                </switch>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="bZl-nO-IHV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="7vN-4H-pLS"/>
+                <constraint firstItem="WaP-SS-lJ7" firstAttribute="top" secondItem="Gz0-C9-Wpk" secondAttribute="bottom" constant="10" id="C1r-vV-npW"/>
+                <constraint firstItem="xnr-ma-WV0" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="60" id="C4K-3V-M5z"/>
+                <constraint firstItem="Gz0-C9-Wpk" firstAttribute="leading" secondItem="lPY-aC-W5I" secondAttribute="leading" id="JR5-KI-zcm"/>
+                <constraint firstItem="bZl-nO-IHV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="KM5-ug-FiH"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lPY-aC-W5I" secondAttribute="trailing" constant="25" id="Ksr-Ms-zgS"/>
+                <constraint firstItem="lPY-aC-W5I" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.3" id="LhZ-sg-SvO"/>
+                <constraint firstItem="Gz0-C9-Wpk" firstAttribute="trailing" secondItem="lPY-aC-W5I" secondAttribute="trailing" id="QnO-R5-OMv"/>
+                <constraint firstItem="Hts-CB-BLq" firstAttribute="centerY" secondItem="Gz0-C9-Wpk" secondAttribute="centerY" id="U7A-sC-YW8"/>
+                <constraint firstItem="Gz0-C9-Wpk" firstAttribute="top" secondItem="lPY-aC-W5I" secondAttribute="bottom" constant="10" id="Wp7-fN-yIZ"/>
+                <constraint firstItem="WaP-SS-lJ7" firstAttribute="leading" secondItem="xnr-ma-WV0" secondAttribute="leading" id="c3r-Jd-age"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="WaP-SS-lJ7" secondAttribute="bottom" constant="10" id="eWS-kt-hgv"/>
+                <constraint firstItem="lPY-aC-W5I" firstAttribute="leading" secondItem="xnr-ma-WV0" secondAttribute="trailing" constant="25" id="eXB-D9-5A1"/>
+                <constraint firstItem="xnr-ma-WV0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="25" id="jcp-iS-upU"/>
+                <constraint firstItem="lPY-aC-W5I" firstAttribute="centerY" secondItem="xnr-ma-WV0" secondAttribute="centerY" id="l5o-S5-GRb"/>
+                <constraint firstItem="Hts-CB-BLq" firstAttribute="centerX" secondItem="xnr-ma-WV0" secondAttribute="centerX" id="pXR-IT-emf"/>
+                <constraint firstItem="WaP-SS-lJ7" firstAttribute="trailing" secondItem="lPY-aC-W5I" secondAttribute="trailing" id="tT9-4v-0aE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bottomSeparator" destination="WaP-SS-lJ7" id="adN-XM-DU7"/>
+                <outlet property="caloriesLabel" destination="Gz0-C9-Wpk" id="c5H-f2-D2a"/>
+                <outlet property="dishImageContainer" destination="lPY-aC-W5I" id="s2A-pw-oAT"/>
+                <outlet property="dishImageView" destination="NOn-UM-MPm" id="pgZ-Jw-bBa"/>
+                <outlet property="dishName" destination="xnr-ma-WV0" id="AQq-Z3-VJ7"/>
+                <outlet property="mealSwitch" destination="Hts-CB-BLq" id="jp5-hN-XSr"/>
+                <outlet property="typeLabel" destination="bZl-nO-IHV" id="EaY-IQ-RjC"/>
+            </connections>
+            <point key="canvasLocation" x="69.565217391304358" y="320.75892857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="DishExample" width="832" height="468"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="separatorColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
